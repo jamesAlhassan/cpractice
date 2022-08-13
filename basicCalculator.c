@@ -32,7 +32,11 @@ printf("Answer: %f\n", answer);
 }else if( op =='/'){
 answer = firstNumber / secondNumber;
 printf("Answer: %f\n", answer);
+}else
+{
+  printf("Invalid Operator\n");
 }
+
 
 
 
