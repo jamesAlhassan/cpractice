@@ -20,6 +20,7 @@ scanf(" %c", &op);
 printf("Enter second number ");
 scanf("%lf", &secondNumber);
 
+/*
 if( op =='+'){
 answer = firstNumber + secondNumber;
 printf("Answer: %f\n", answer);
@@ -37,13 +38,34 @@ printf("Answer: %f\n", answer);
   printf("Invalid Operator\n");
 }
 
+*/
 
+/*Using an alternative: switch statement */
 
+switch( op){
+    case '+':
+        answer = firstNumber + secondNumber;
+        printf("Answer: %f\n", answer);
+        break;
 
+     case '-':
+        answer = firstNumber - secondNumber;
+        printf("Answer: %f\n", answer);    
+        break;
 
+      case '*':
+         answer = firstNumber * secondNumber;
+         printf("Answer: %f\n", answer);    
+         break;
 
+      case '/':
+         answer = firstNumber / secondNumber;
+         printf("Answer: %f\n", answer);    
+         break;
 
-
+        default:
+            printf("Invalid Operator\n");
+}
 
 
 return 0;
