@@ -4,3 +4,9 @@
 Date: 2022
 Topic: C Program Structure
 */
+
+//2. Link Section
+
+#include <stdio.h>
+
+
