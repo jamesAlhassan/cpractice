@@ -10,7 +10,7 @@ Topic: C Program Structure
 #include <stdio.h>
 
 //3. Definition Section
-#include MAX 100
+#define MAX 100
 
 //4. Global Declaration Section
 int a =50;
@@ -20,7 +20,7 @@ void display();
 
 void main()
 {
-printf("Hello");
+printf("Hello \n");
 display();
 
 }
