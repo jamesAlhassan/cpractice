@@ -13,7 +13,12 @@ B = 'B';
 y = 'y';
 e = 'e';
 
-printf("%c %c %c \n", B, y, e);
+int num1 = 123;
+float num2 = 123.456;
 
+
+
+printf("%c %c %c \n", B, y, e);
+printf("%-d  %-f\n", num1, num2); // left align
 return (0);
 }
