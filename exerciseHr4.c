@@ -26,7 +26,7 @@ gett = getchar();
 
 printf("%c %c %c \n", B, y, e);
 printf("%-d  %-f\n", num1, num2); // left align
-printf("%x %x %x\n", num3, num4, num5); // print nums in hex values
+printf("The hex of 15, 150 and 1500 are:  %x %x %x\n", num3, num4, num5); // print nums in hex values
 printf("You entered:  ");
 putchar(gett);
 putchar('\n');
