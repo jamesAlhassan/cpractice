@@ -1,18 +1,20 @@
 #include <stdio.h>
 
-/** main - calculator using function pointers
+/**
+ * main - calculator using function pointers
  *
  * Return: 0 if success
  */
 
-int add(x, y);
-int sub(x, y);
-int mul(x, y);
-int div(x, y);
+int add(int, int);
+int sub(int, int);
+int mul(int, int);
+int div(int, int);
+int mod(int, int);
 
 int main(void)
 {
-	int (*ptAll[])(int, int) = {add, sub, mul, div};
+	int (*ptAll[])(int, int) = {add, sub, mul, div, mod};
 
 }
 
@@ -26,4 +28,17 @@ int sub(int x, int y)
 	return (x - y);
 }
 
+int mul(int x, int y)
+{
+	return (x * y);
+}
 
+int div(int x, int y)
+{
+	return (x / x);
+}
+
+int mod(int x, int y)
+{
+	return (x % y);
+}
