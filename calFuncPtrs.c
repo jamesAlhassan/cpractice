@@ -35,7 +35,7 @@ int main(void)
 		result = (*ptAll[operator])(num1, num2);
 	}
 
-	printf("Result: %d", result);
+	printf("The result of %d and %d is: %d\n", num1, num2, result);
 
 	return (0);
 };
