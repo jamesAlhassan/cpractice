@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - calculator using function pointers
@@ -9,14 +10,14 @@
 int add(int, int);
 int sub(int, int);
 int mul(int, int);
-int div(int, int);
+int divi(int, int);
 int mod(int, int);
 
 int main(void)
 {
 	int num1, num2, operator, result;
 
-	int (*ptAll[])(int, int) = {add, sub, mul, div, mod};
+	int (*ptAll[])(int, int) = {add, sub, mul, divi, mod};
 
 	printf("Please enter two numbers \n");
 	scanf("%d%d", &num1, &num2);
@@ -25,10 +26,16 @@ int main(void)
 	scanf("%d", &operator);
 
 	if (operator < 0)
+	{
 		printf("Sorry, Operator: %d out of range\n", operator);
+		exit(1);
+	}
 
 	else if (operator > 4)
+	{
 		printf("Sorry, Operator: %d out of range\n", operator);
+		exit(1);
+	}
 
 	else
 	{
@@ -55,9 +62,9 @@ int mul(int x, int y)
 	return (x * y);
 }
 
-int div(int x, int y)
+int divi(int x, int y)
 {
-	return (x / x);
+	return (x / y);
 }
 
 int mod(int x, int y)
