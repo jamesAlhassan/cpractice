@@ -14,8 +14,12 @@ int mod(int, int);
 
 int main(void)
 {
+	int num1, num2, operator;
+
 	int (*ptAll[])(int, int) = {add, sub, mul, div, mod};
 
+	printf("Please enter two numbers \n");
+	scanf("%d%d", num1, num2);
 }
 
 int add(int x, int y)
